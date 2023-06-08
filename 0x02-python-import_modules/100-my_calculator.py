@@ -1,44 +1,27 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    from sys import argv
+    import sys
     from calculator_1 import add, sub, mul, div
-    count = len(argv)
 
-    if count != 4:
-        print("Usage: {} <a> <operator> <b>".format(a, b, argv[0]))
-        exit(1)
-        a = int(argv[1])
-        operator = argv[2]
-        b = int(argv[3])
+    if len(sys.argv) != 4:
+        print(f"Usage: {argv[0]} <a> <operator> <b>")
+        sys.exit(1)
 
-        def invalid_operator():
-            print("Unknown operator. Available operators: +, -, * and /")
-            exit(1)
+    a = int(sys.argv[1])
+    operator = sys.argv[2]
+    b = int(sys.argv[3])
 
-        def addition():
-            c = add(a, b)
-            print("{} + {} = {}".format(a, b, c))
-            return c
+    result = None
 
-        def subtraction():
-            d = sub(a, b)
-            print("{} - {} = {}".format(a, b, d))
-            return d
-
-        def multiplication():
-            e = mul(a, b)
-            print("{} * {} = {}".format(a, b, e))
-            return e
-
-        def division():
-            f = div(a, b)
-            print("{} / {} = {}".format(a, b, f))
-            return f
-
-        options = {
-                "+": addition,
-                "-": subtraction,
-                "*": multiplication,
-                "/": division
-        }
-        options.get(operator, invalid_operator)()
+    if operator == '+':
+        result = add(a, b)
+    elif operator == '-':
+        result = sub(a, b)
+    elif operator == '*':
+        result = mul(a, b)
+    elif operator == '/':
+        result = div(a, b)
+    else:
+        print("Unknown operator. Available operator: +, -, * and /")
+        sys.exit(1)
+    print(f"{a} {operator} {b} = {result}")
