@@ -8,5 +8,5 @@ if __name__ == "__main__":
         print("{} argument.".format(arg_num))
     else:
         print("{} arguments.".format(arg_num))
-    for a, argument in enumerate(sys.argv[1:]):
-        print("{} : {}".format(a, argument))
+    for a, argument in enumerate(sys.argv[1:], start = 1):
+        print("{}: {}".format(a, argument))
