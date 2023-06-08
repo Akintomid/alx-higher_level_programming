@@ -1,23 +1,13 @@
 #!/usr/bin/python3
-from calculator_1 import add
-from calculator_1 import sub
-from calculator_1 import mul
-from calculator_1 import div
-
-a = 10
-b = 5
-
-output = add(a, b)
-print("{} + {} = {}".format(a, b, output))
-
-
-output = sub(a, b)
-print("{} - {} = {}".format(a, b, output))
-
-output = mul(a, b)
-
-print("{} * {} = {}".format(a, b, output))
-
-output = div(a, b)
-
-print("{} / {} = {}".format(a, b, output))
+if __name__ == "__main__":
+    from calculator_1 import add, sub, mul, div
+    a = 10
+    b = 5
+    c = add(a, b)
+    d = sub(a, b)
+    e = mul(a, b)
+    f = div(a, b)
+    print("{} + {} = {}".format(a, b, c))
+    print("{} - {} = {}".format(a, b, d))
+    print("{} * {} = {}".format(a, b, e))
+    print("{} / {} = {}".format(a, b, f))
