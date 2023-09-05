@@ -4,18 +4,14 @@ UnitTests
 TDD
  By: Guillaume
  Weight: 1
- Ongoing second chance project - started Jun 29, 2023 6:00 AM, must end by Jul 8, 2023 6:00 AM
+ Project will start Aug 31, 2023 6:00 AM, must end by Sep 6, 2023 6:00 AM
+ Checker will be released at Sep 6, 2023 6:00 AM
  An auto review will be launched at the deadline
-In a nutshell…
-Auto QA review: 0.0/167 mandatory & 0.0/104 optional
-Altogether:  0.0%
-Mandatory: 0.0%
-Optional: 0.0%
-Calculation:  0.0% + (0.0% * 0.0%)  == 0.0%
 Concepts
 For this project, we expect you to look at this concept:
 
 Never forget a test
+
 Background Context
 Important notice on intranet checks for Python projects
 Starting from today:
